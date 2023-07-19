@@ -24,7 +24,10 @@ class Home extends BaseController
 
     public function login()
     {
-        return view('auth/login');
+        //check if there error message in session
+        $error = session()->getFlashdata('error');
+
+        return view('auth/login', ['error' => $error]);
     }
 
     public function dashboard() 

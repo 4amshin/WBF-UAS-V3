@@ -6,7 +6,6 @@
 <header id="header" class="header">
   <div class="logo">
     <img src="https://tinyurl.com/bpjs-ks-logo" alt="bpjs-logo" />
-    <!-- <img src="https://tinyurl.com/bpjs-ks-logo-white" alt="bpjs-logo" /> -->
   </div>
   <nav>
     <ul>
@@ -21,7 +20,7 @@
         </ul>
       </li>
       <li><a href="#contact" class="nav-item">Kontak</a></li>
-      <a href="login.php" class="login-button">Login</a>
+      <a href="<?= base_url('login'); ?>" class="login-button">Login</a>
     </ul>
   </nav>
 </header>
