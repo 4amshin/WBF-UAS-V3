@@ -40,7 +40,9 @@ class AuthController extends BaseController
 
     public function doLogout()
     {
-        
+        //destroy session and redirect to login page
+        session()->destroy();
+        return redirect()->to(base_url('login'));
     }
 }
 
